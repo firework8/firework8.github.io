@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Hongda Liu</title>
+  
+  <meta name="author" content="Hongda Liu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/svg+xml" href="images/icon.png">
+</head>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<style>
+.preview-container {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;  
+  transition: opacity 0.3s ease;  
+  overflow: hidden;
+}
+
+.preview-overlay video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:center">
+                    <name>Hongda Liu</name>
+                  </p>
+                  I am currently a Ph.D. student at the <a href="http://cripac.ia.ac.cn/CN/model/index.htm">NLPR</a>, Institute of Automation, Chinese Academy of Sciences (<a href="http://www.ia.cas.cn/">CASIA</a>), supervised by <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Prof. Zhenan Sun</a>. 
+                  Prior to that, I received my bachelor's degree in Computer Science and Technology from <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2020, working with <a href="https://lus-jlu.github.io/">Prof. Shuai Lyu</a>. 
+                  <p>
+                  My research interests revolve around <strong>human-centric action understanding</strong>, <strong>video recognition</strong>, and <strong>multi-modality learning</strong>. 
+                  If you are interested in my work, please feel free to reach out for discussions or collaborations!  
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:hongda.liu@cripac.ia.ac.cn">Email</a> &nbsp;/&nbsp;
+                    <a href="https://scholar.google.com/citations?user=INvefR0AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/firework8">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:25%;max-width:25%">
+                  <a href="images/HongdaLiu.jpg">
+                    <img style="width:100%;max-width:100%;border-radius:50%;object-fit:cover;aspect-ratio:1/1" alt="profile photo" src="images/HongdaLiu.jpg" class="hoverZoomLink">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>
+                    Publications 
+                  </heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="pubs"></div>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+
+                <tr onmouseout="ProtoGCN_stop()" onmouseover="ProtoGCN_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='ProtoGCN_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/ProtoGCN.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/ProtoGCN.jpg' id='ProtoGCN_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function ProtoGCN_start() {
+                        document.getElementById('ProtoGCN_image').style.opacity = "1";
+                      }
+                      function ProtoGCN_stop() {
+                        document.getElementById('ProtoGCN_image').style.opacity = "0";
+                      }
+                      ProtoGCN_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://github.com/firework8/ProtoGCN">
+                      <papertitle> Revealing Key Details to See Differences: A Novel Prototypical Perspective for Skeleton-based Action Recognition </papertitle>
+                    </a>
+                    <br>
+                    <strong>Hongda Liu</strong>,
+                    <a href="https://yunfan0621.github.io/">Yunfan Liu</a>,
+                    <a href="https://scholar.google.com/citations?user=DQAHeWcAAAAJ">Min Ren</a>,
+                    <a href="https://github.com/fengyaque">Hao Wang</a>,
+                    <a href="https://wylcasia.github.io/">Yunlong Wang</a>,
+                    <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun</a>
+                    <br>
+                    <em>CVPR</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2411.18941">[paper]</a>
+                    <a href="https://github.com/firework8/ProtoGCN">[code]</a>
+                    <br>
+                    <p><em> ProtoGCN, a novel graph prototype learning method that amplifies subtle distinctions for accurate differentiation of similar actions. </em></p>
+                  </td>
+                </tr>
+                
+                <tr onmouseout="BRL_stop()" onmouseover="BRL_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='BRL_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/BRL.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/BRL.png' id='BRL_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function BRL_start() {
+                        document.getElementById('BRL_image').style.opacity = "1";
+                      }
+                      function BRL_stop() {
+                        document.getElementById('BRL_image').style.opacity = "0";
+                      }
+                      BRL_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://link.springer.com/article/10.1007/s11633-023-1487-8">
+                      <papertitle> Balanced Representation Learning for Long-tailed Skeleton-based Action Recognition </papertitle>
+                    </a>
+                    <br>
+                    <strong>Hongda Liu</strong>,
+                    <a href="https://wylcasia.github.io/">Yunlong Wang</a>,
+                    <a href="https://scholar.google.com/citations?user=DQAHeWcAAAAJ">Min Ren</a>,
+                    <a href="https://scholar.google.com/citations?user=S-tx9_IAAAAJ">Junxing Hu</a>,
+                    <a href="https://scholar.google.com/citations?user=90RxB5kAAAAJ">Zhengquan Luo</a>,
+                    <a href="http://cripac.ia.ac.cn/en/EN/column/item115.shtml">Guangqi Hou</a>,
+                    <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun</a>
+                    <br>
+                    <em>Machine Intelligence Research (MIR)</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2308.14024">[paper]</a>
+                    <a href="https://github.com/firework8/BRL">[code]</a>
+                    <br>
+                    <p><em> BRL, a method to address the long-tailed problem in action recognition. </em></p>
+                  </td>
+                </tr>
+                
+              </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Honors and Awards</heading>
+                <ul>
+                  <li> First prize, Excellent Undergraduate Scholarship of Jilin University, 2018, 2019. 
+                  </li>
+                  <li> Second Price in China National Mathematical Contest in Modeling, 2018.
+                  </li>
+                  <li> Excellent Student of Jilin University, 2017.
+                  </li>
+                  <li> National Scholarship, 2017.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Teaching Assistant</heading>
+                <ul>
+                  <li> 
+                    Biometrics, 081104M06011H, UCAS. (Spring, 2022, 2023, and 2024)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    <a href="https://jonbarron.info/">Website Template</a>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<p><center>
+  <div id="clustrmaps-widget" style="width:5%">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EaGIoPH3dDfrXLhRZNik93b9NzvEAGu1Pj-HNMgU4no"></script>
+  </div>        
+  <br>
+    &copy; Hongda Liu | Last updated: Mar 24, 2025
+</center></p>
+
+</body>
+</html>
