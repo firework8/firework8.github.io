@@ -90,6 +90,47 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+                
+                <tr onmouseout="SkeletonAgent_stop()" onmouseover="SkeletonAgent_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='SkeletonAgent_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/SkeletonAgent.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/SkeletonAgent.png' id='SkeletonAgent_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function SkeletonAgent_start() {
+                        document.getElementById('SkeletonAgent_image').style.opacity = "1";
+                      }
+                      function SkeletonAgent_stop() {
+                        document.getElementById('SkeletonAgent_image').style.opacity = "0";
+                      }
+                      SkeletonAgent_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://github.com/firework8/SkeletonAgent">
+                      <papertitle> SkeletonAgent: An Agentic Interaction Framework for Skeleton-based Action Recognition </papertitle>
+                    </a>
+                    <br>
+                    <strong>Hongda Liu</strong>,
+                    <a href="https://yunfan0621.github.io/">Yunfan Liu</a>,
+                    <a href="https://github.com/cupscc">Changlu Wang</a>,
+                    <a href="https://wylcasia.github.io/">Yunlong Wang</a>,
+                    <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun</a>
+                    <br>
+                    <em>arXiv</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2511.22433">[paper]</a>
+                    <a href="https://github.com/firework8/SkeletonAgent">[code]</a>
+                    <br>
+                    <p><em> SkeletonAgent, a novel agent-based framework that establishes the online interaction between the recognition model and LLM, enabling targeted guidance for fine-grained action discrimination. </em></p>
+                  </td>
+                </tr>
 
                 <tr onmouseout="ProtoGCN_stop()" onmouseover="ProtoGCN_start()">
                   <td style="padding:20px;width:25%;vertical-align:middle">
@@ -185,7 +226,9 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <heading>Honors and Awards</heading>
                 <ul>
-                  <li> First prize, Excellent Undergraduate Scholarship of Jilin University, 2018, 2019. 
+                  <li> Merit Student of UCAS, 2025. 
+                  </li>
+                  <li> Excellent Undergraduate Scholarship of Jilin University, 2020. 
                   </li>
                   <li> Second Price in China National Mathematical Contest in Modeling, 2018.
                   </li>
@@ -237,7 +280,7 @@
     <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EaGIoPH3dDfrXLhRZNik93b9NzvEAGu1Pj-HNMgU4no"></script>
   </div>        
   <br>
-    &copy; Hongda Liu | Last updated: Mar 24, 2025
+    &copy; Hongda Liu | Last updated: Dec 1, 2025
 </center></p>
 
 </body>
